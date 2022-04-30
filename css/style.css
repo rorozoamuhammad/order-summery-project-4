@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 2vh;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.background {
+    width: 100%;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 50vh;
+}
+
+.background-mobile {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.background-mobile img {
+    width: 100%;
+    height: 50vh;
+}
+
+.bungkus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 28vmax;
+    background-color: hsl(225, 100%, 98%);
+    margin: auto;
+    margin: 9vh 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.head img {
+    width: 28vmax;
+}
+
+.title {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.title h1 {
+    font-size: 1.7em;
+}
+
+.paraf {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.music {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8vh;
+}
+
+.music .icon {
+    display: flex;
+}
+
+.artikel {
+    margin-left: 1vw;
+}
+
+.artikel h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.artikel p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.ket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ket p a {
+    color: hsl(245, 75%, 52%);
+}
+
+.ket p a:hover {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.button button {
+    padding: 1em 7em;
+    border-radius: 8px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: hsl(225, 100%, 98%);
+    transition: .5s;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.cancel p a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.cancel p a:hover {
+    color: hsl(245, 75%, 52%);
+}
+
+@media screen and (max-width: 576px) {
+    .background {
+        display: none;
+    }
+    .background-mobile {
+        display: block;
+    }
+    .container {
+        width: 50vmax;
+        right: 18vw;
+    }
+    .head img {
+        width: 50vmax;
+        height: 25vh;
+    }
+    .title h1 {
+        font-size: 1.4em;
+    }
+    .paraf p {
+        font-size: 1em;
+    }
+    .paraf {
+        width: 85%;
+    }
+    .artikel {
+        margin-left: 4vw;
+    }
+    .button button {
+        padding: 1em 6em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        display: none;
+    }
+    .background-mobile {
+        display: block;
+    }
+    .container {
+        width: 50vmax;
+        right: 5vw;
+    }
+    .head img {
+        width: 50vmax;
+        height: 25vh;
+    }
+    .title h1 {
+        font-size: 1.4em;
+    }
+    .paraf p {
+        font-size: 1em;
+    }
+    .paraf {
+        width: 85%;
+    }
+    .artikel {
+        margin-left: 4vw;
+    }
+    .button button {
+        padding: 1em 6em;
+    }
+}
